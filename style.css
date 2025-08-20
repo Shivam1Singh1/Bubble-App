@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading text style */
+h2 {
+  margin: 0 0 15px 0;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Canvas box style */
+canvas {
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3), 
+              0 5px 15px rgba(0,0,0,0.2) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 90%;
+  max-height: 70vh;
+}
+
+/* Canvas hover effect */
+canvas:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.4), 
+              0 5px 20px rgba(0,0,0,0.25) inset;
+}
+
+/* Buttons container box */
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Button normal state */
+button {
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Button hover state */
+button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+
+button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
